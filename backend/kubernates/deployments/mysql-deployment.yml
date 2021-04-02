@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  mysql-db
+  labels:
+    app: mysql-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql-db
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app:  mysql-db
+    spec:
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 1
+            preference:
+              matchExpressions:
+              - key: servertype
+                operator: In
+                values:
+                - M6
+      containers:
+      - image: mysql:5.7
+        name: mysql-db
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: password      
+        ports:
+        - containerPort:  3306
+          name:  mysql-db-port
+        volumeMounts:
+        - mountPath: /var/lib/mysql
+          name: mysql-db-data
+      volumes:
+        - name: mysql-db-data
+          persistentVolumeClaim:
+            claimName: mysql-db-pvc

@@ -1,0 +1,43 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: backend-api
+  labels:
+    app: backend-api
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 2   
+      maxUnavailable: 0  
+  selector:
+    matchLabels:
+      app: backend-api
+  template:
+    metadata:
+      labels:
+        app: backend-api
+    spec:
+      containers:
+        - image: backend
+          name: backend-api
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+              name: backend-port
+          env:
+            - name: DB_HOST
+              value: mysql-db
+          livenessProbe:
+            httpGet:
+              path: /system/status
+              port: backend-port
+            initialDelaySeconds: 15
+            timeoutSeconds: 30
+          readinessProbe:
+            httpGet:
+              path: /system/status
+              port: backend-port
+            initialDelaySeconds: 15
+            timeoutSeconds: 30

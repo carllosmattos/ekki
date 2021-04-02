@@ -1,0 +1,22 @@
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    /* font-family: 'Dosis', sans-serif;  */
+    font-size: 16px;
+    background-color: rgba(244, 244, 244, 0.68);
+}
+
+.icoEkki{
+    color: #000;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+
+.textTheme{
+    color: #fff; 
+    font-weight: bolder;
+}
+
+.colorTheme{
+    background-color: crimson
+}

@@ -1,0 +1,29 @@
+version: '3'
+
+services: 
+  backend:
+    build: ../backend
+    container_name: backend
+    restart: always
+    environment: 
+      DB_HOST: mysql1
+      DB_PORT: 3306
+    ports: 
+      - 3000:3000
+    depends_on: 
+      - 'mysql'
+  mysql:
+    image: mysql:5.7
+    container_name: mysql1
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: ekki
+    ports: 
+      - 3307:3306
+    volumes:
+      - mysqldrive:/var/lib/mysql
+networks:
+  default:
+volumes:
+  mongo:
