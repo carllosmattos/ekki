@@ -27,7 +27,7 @@ Também está pre configurado um ambiente em kubernetes os arquivos `.yml` estã
 arquivos para automatizar o startup e shutdown do ambiente em kubernetes os arquivos estão localizados em `./backend/kubernetes/*sh`
 
 ## IMPORTANTE Configuração da base de dados
-Antes de iniciar qualquer ambiente sejá ele `LOCAL | DOCKERIZADO` deve ser criado uma base de dados no [mysql](https://www.mysql.com/) uma para ambiente de DEV.
+Antes de iniciar qualquer ambiente sejá ele `LOCAL | DOCKERIZADO` deve ser criado uma base de dados no [mysql](https://www.mysql.com/) para ambiente de DEV.
 
 Database Name | User Database | Password Database
 --------------|---------------|------------------
