@@ -29,7 +29,7 @@
                 <p class="md-title">Ùltimas tranferencias</p>
                 <md-empty-state 
                     v-if="transferencias.length === 0"
-                    md-icon="leaderboard"
+                    md-icon="swap_horiz"
                     md-label="Faça sua primeira transferencia."
                     md-description="Clique no botão abaixo para fazer a sua primeira transferencia.">
                     <router-link to="/transferencia">

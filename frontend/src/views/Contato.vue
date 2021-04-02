@@ -5,7 +5,7 @@
         <p class="md-title">Lista de contatos</p>
         <md-empty-state 
           v-if="contatos.length === 0"
-          md-icon="list"
+          md-icon="person_add"
           md-label="Cadastre seu primeiro contato. É bem rápido!"
           md-description="Clique no botão abaixo para cadastrar seus contatos.">
           <md-button class="md-primary md-raised" @click="openDialog('Cadastre um Novo contato')">

@@ -5,7 +5,7 @@
         <p class="md-title">Histórico de transferencias</p>
         <md-empty-state 
           v-if="transferencias.length === 0"
-          md-icon="leaderboard"
+          md-icon="swap_horiz"
           md-label="Está é a sua primeira transferência! Vamos lá?"
           md-description="Clique no botão abaixo para fazer a sua primeira transferencia.">
           <md-button class="md-primary md-raised" @click="openDialog('Realizar uma transferencia')">

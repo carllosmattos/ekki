@@ -20,7 +20,7 @@ Rode `npm run dev` no cmd para rodar o servidor dev. Navege para `http://localho
 para que este projeto funcione na sua maquina primeiro você vai precisar de algumas ferramentas instaladas em usa maquina
 - 1º [node.js](https://nodejs.org/en/) qualquer versão acima da V5
 - 2º [Vue CLI](https://cli.vuejs.org/) versão 4.5.6 rode o comando ```npm i @vue/cli@4.5.6 -g```
-- 3º [mongoDB](https://www.mongodb.com/) versão 3.4.9.
+- 3º [mysql](https://www.mysql.com/) versão mysql:5.7 ou superior.
 
 ## Ambiente em kubernetes
 Também está pre configurado um ambiente em kubernetes os arquivos `.yml` estão localizados em `./backend/kubernetes/**/*.yml`, e  também 
