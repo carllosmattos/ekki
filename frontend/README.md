@@ -41,7 +41,7 @@ npm run docker:build
 npm run docker:run
 ```
 ### Build da aplicação
-Para gerar um build do projeto basta roca o comando abaixo no seu CMD ou TERMINAL do seu SO, para mais informações 
+Para gerar um build do projeto basta rodar o comando abaixo no seu CMD ou TERMINAL do seu SO, para mais informações 
 sobre build do [Vue.js](https://vuejs.org/) acesse este [Link](https://cli.vuejs.org/guide/mode-and-env.html).
 ```sh
 npm run build

@@ -35,7 +35,7 @@ npm i
 ```
 Obs: E necessario que o [NodeJs](https://nodejs.org/en/) já esteja instalado em sua máquina
 
-#### 2) Data base
+#### 2) Database
 ``` sh
 docker-compose up -d 
 ```
@@ -59,7 +59,7 @@ console de execução
 
 ## Test
 #### 1) Inicialização da swich de teste
-Obs: Antes de fazer os passo de iniciar os testes deverar ser feito previamente os passos a passos da DEVELOPMENT
+Obs: Antes de fazer os passo de iniciar os testes devera ser feito previamente os passos a passos da DEVELOPMENT
 ``` sh
 npm test
 # OU
@@ -94,9 +94,10 @@ Eu tambem deixei pre configurado um ambiente em kubernetes os arquivos `.yml` es
 
 ## Contato
 
-Desenvolvido por: [Carlos Eduardo](https://github.com/carllosmattos)
+Desenvolvido por: [Carlos Eduardo](https://gitlab.com/carllosmattos)
 
 * Email: [duduvieiramattos@gmail.com](mailto:duduvieiramattos@gmail.com) 
+* Gitlab: [gitlab.com/carllosmattos](https://gitlab.com/carllosmattos)
 * Github: [github.com/carllosmattos](https://github.com/carllosmattos)
 * Linkedin: [linkedin.com/in/carlos-eduardo-vieira-de-matos-7068b5158](https://www.linkedin.com/in/carlos-eduardo-vieira-de-matos-7068b5158)
 

@@ -12,7 +12,7 @@ services:
       - 80:80
   backend:
     build: .
-    container_name: backend
+    container_name: ./backend
     restart: always
     environment: 
       DB_HOST: mysql1
